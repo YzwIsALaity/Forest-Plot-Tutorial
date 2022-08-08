@@ -20,7 +20,7 @@ We will use __ggplot2__ to make a __forest plot__ for estimated odds ratios from
 
 In the ggplot, no matter what kind of plots we make, they are basically composed of two parts: X-axis and Y-axis. __Since we want to create a forest plot for odds ratio, we set X-axis as__ `Variable` __and Y-axis as__ `OR`.
 
-# 2. Version 0.0\
+# 2. Version 0.0
 When we determined which variables should be placed in X-axis or Y-axis, we then need to choose what "values" should be displayed. Typically, these "values" are in numerical format and we also need to choose what types of plots we want to show (e.g. point, line, bar, tile, box with whisker, etc.). A forest plot consists of a center (`OR`) and two whiskers (`Lower` and `Upper`).
 ```{r}
 # Version 0.0
@@ -31,7 +31,7 @@ ggplot(Plot.OR.Mat.6, aes(x = OR, y = Variable)) +    # x is for X-axis | y is f
 ![](/Users/yongzhewang/Desktop/Yzw Is A Laity/Forest-Plots-Tutorial/Version 0.0.jpeg)
 So it basically looks like the above one. But we can polish it and eventually attach `Summary` with corresponding `Variable`. 
 
-# 3. Version 1.0\
+# 3. Version 1.0
 The main elements in this plot are from two functions: 
 
 - `geom_point()`: this function is for points (OR in our example) and it can use different commands to modify the point (e.g. __shape__ [`shape = 18`], __size__ [`size = 3`], __color__ [`col = 'black'`], etc.);
@@ -58,7 +58,7 @@ ggplot(Plot.OR.Mat.6, aes(x = OR, y = Variable)) +                  # x is for X
 ![](/Users/yongzhewang/Desktop/Yzw Is A Laity/Forest-Plots-Tutorial/Version 1.0.jpeg)
 In the Version 1.0, we can find that the gray background and grid may not be good for presenting the plot and texts in two axes are small. 
 
-# 3. Version 2.0\
+# 3. Version 2.0
 So in the next step we are going to improve the background and texts under the Version 1.0 and we are going to introduce some functions and corresponding commands.
 
 - `theme_bw()`: this is a dark-on-light theme and better for presentations.\
@@ -131,7 +131,7 @@ p1
 ![](/Users/yongzhewang/Desktop/Yzw Is A Laity/Forest-Plots-Tutorial/Version 2.0.jpeg)
 This version looks more clear and tidy! We can try our last step, that is to combine the `Summary` for each variable. 
 
-# 4. Version 3.0\
+# 4. Version 3.0
 In the last version, we are going to combine the `Summary` and the main plot together. The basic logic of the combination is to put two plots together--the main plot is the Version 2.0 and another empty plot only contains `Summary`. First, we are going to create an empty plot which __attaches__ `Summary` __on its right hand side__. We first create an empty plot.
 ```{r}
 table_base <- 
