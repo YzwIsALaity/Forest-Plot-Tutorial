@@ -132,7 +132,9 @@ ggplot(Plot.OR.Mat.6, aes(x = OR, y = Variable)) +                  # x is for X
              alpha = 0.5)                                           # the transparency level of the line 
 p1
 ```
-![](/Users/yongzhewang/Desktop/Yzw Is A Laity/Forest-Plots-Tutorial/Version 2.0.jpeg)
+
+![](https://github.com/YzwIsALaity/Forest-Plot-Tutorial/blob/66d0209a407a273f78a5d92f86d99a9d670e2bf5/Version%202.0.jpeg)
+
 This version looks more clear and tidy! We can try our last step, that is to combine the `Summary` for each variable. 
 
 # 4. Version 3.0
