@@ -28,7 +28,8 @@ ggplot(Plot.OR.Mat.6, aes(x = OR, y = Variable)) +    # x is for X-axis | y is f
   geom_point() +                                      # a function for plotting points
   geom_errorbarh(aes(xmin = Lower, xmax = Upper))     # a function for plotting two whiskers
 ```
-![](/Users/yongzhewang/Desktop/Yzw Is A Laity/Forest-Plots-Tutorial/Version 0.0.jpeg)
+![](/Version 0.0.jpeg)
+
 So it basically looks like the above one. But we can polish it and eventually attach `Summary` with corresponding `Variable`. 
 
 # 3. Version 1.0
