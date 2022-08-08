@@ -16,7 +16,7 @@ We will use __ggplot2__ to make a __forest plot__ for estimated odds ratios from
 
 - `Index`: it is a sequence of ordered number used for the plot and its length is equal to the number of `Variable`.
 
-![](/Users/yongzhewang/Desktop/Yzw Is A Laity/Forest-Plots-Tutorial/Dataset Shape.png)
+![](https://github.com/YzwIsALaity/Forest-Plot-Tutorial/blob/eb8887ed67d5da87e9bf5fc69895c7459390ec5d/Dataset%20Shape.png)
 
 In the ggplot, no matter what kind of plots we make, they are basically composed of two parts: X-axis and Y-axis. __Since we want to create a forest plot for odds ratio, we set X-axis as__ `Variable` __and Y-axis as__ `OR`.
 
