@@ -56,7 +56,7 @@ ggplot(Plot.OR.Mat.6, aes(x = OR, y = Variable)) +                  # x is for X
   xlab("Odds Ratio (95% CI, log scale)") +                          # X-axis label
   ggtitle('6-month Timepoint')                                      # title of plots
 ```
-![](/Users/yongzhewang/Desktop/Yzw Is A Laity/Forest-Plots-Tutorial/Version 1.0.jpeg)
+![](https://github.com/YzwIsALaity/Forest-Plot-Tutorial/blob/477bde6d42ba41b9c3c71f0dcb2095ee29538463/Version%201.0.jpeg)
 In the Version 1.0, we can find that the gray background and grid may not be good for presenting the plot and texts in two axes are small. 
 
 # 3. Version 2.0
