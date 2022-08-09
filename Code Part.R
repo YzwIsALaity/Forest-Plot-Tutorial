@@ -129,7 +129,7 @@ table_base2 <-
 
 ## OR point estimate table
 tab2 <- table_base2 + geom_text(aes(y = Index, x = 1, label = Summary), size = 4, hjust = 0, vjust = 1.35)  
-# eventually we attach all together!
+# Eventually we attach all together!
 grid.arrange(p2, tab2,
              p1, tab1,
              nrow = 2, ncol = 2)
