@@ -1,5 +1,5 @@
 # __Forest-Plots-Tutorial__
-## Yongzhe Wang, 08/08/2022
+## Yongzhe Wang
 
 # 1. Format of dataset for forest plot
 We will use __ggplot2__ to make a __forest plot__ for estimated odds ratios from logistic regression models and the ggplot2 requires a specific format of the dataset. __We require three packages `ggplot2`, `gridExtra`, and `scales`.__ In this dataset, we have 6 columns
