@@ -4,15 +4,15 @@
 # 1. Format of dataset for forest plot
 We will use __ggplot2__ to make a __forest plot__ for estimated odds ratios from logistic regression models and the ggplot2 requires a specific format of the dataset. __We require three packages `ggplot2`, `gridExtra`, and `scales`.__ In this dataset, we have 6 columns
 
-- `Variable`: __covariates__ in logistic regression models (numerical);\
+- `Variable`: __covariates__ in logistic regression models (numerical);
 
-- `Time`: time points on month for different outcomes (numerical);\
+- `Time`: time points on month for different outcomes (numerical);
 
-- `OR`: estimated __odds ratios__ for `Variable` (numerical);\
+- `OR`: estimated __odds ratios__ for `Variable` (numerical);
 
-- `Lower` and `Upper`: lower and upper bounds in __95% confidence intervals__ for estimated odds ratios (numerical);\
+- `Lower` and `Upper`: lower and upper bounds in __95% confidence intervals__ for estimated odds ratios (numerical);
 
-- `Summary`: __sentences__ combined OR and 95% CI for odds ratios (string);\
+- `Summary`: __sentences__ combined OR and 95% CI for odds ratios (string);
 
 - `Index`: it is a sequence of ordered number used for the plot and its length is equal to the number of `Variable`.
 
@@ -42,7 +42,7 @@ The main elements in this plot are from two functions:
 
 Meanwhile, plots for odds ratio are often displayed under log scale and we can also easily change the scale system in ggplot with the command `scale_x_continuous()` (numerical value are in X-axis) or `scale_y_continuous()` (numerical value are in y-axis). In our example, the numerical values are in X-axis so we use 
 
-- `scale_x_continuous()`: we use the command `trans = 'log'` (for __log transformation__) inside the function and set up the __scale range of X-axis__ with the command `limits = c(0.005, 13)`(lower, upper). Since the log transformation will bring up lots of digits for numerical values, we can pass the `label_number()` to round digits into __2 decimal places of precision__.\ 
+- `scale_x_continuous()`: we use the command `trans = 'log'` (for __log transformation__) inside the function and set up the __scale range of X-axis__ with the command `limits = c(0.005, 13)`(lower, upper). Since the log transformation will bring up lots of digits for numerical values, we can pass the `label_number()` to round digits into __2 decimal places of precision__.
 
 We can combine them with the __X-axis label__ [`xlab()`] and the __main title__ [`ggtitle()`] to see what it looks like.
 ```{r}
@@ -65,7 +65,7 @@ In the Version 1.0, we can find that the gray background and grid may not be goo
 # 3. Version 2.0
 So in the next step we are going to improve the background and texts under the Version 1.0 and we are going to introduce some functions and corresponding commands.
 
-- `theme_bw()`: this is a dark-on-light theme and better for presentations.\
+- `theme_bw()`: this is a dark-on-light theme and better for presentations.
 
 - `theme()`: this is a general function for all non-data components in a plot so we can use it to modify any texts, labels, backgrounds, etc. Within this function, we are going to introduce some commands.
   
