@@ -172,7 +172,7 @@ Eventually, the final plot will be better than previous versions.
 grid.arrange(p1, tab1, 
              nrow = 1, ncol = 2)
 ```
-![](/Users/yongzhewang/Desktop/Yzw Is A Laity/Forest-Plots-Tutorial/Version 3.0.jpeg)
+![](https://github.com/YzwIsALaity/Forest-Plot-Tutorial/blob/cc64ccb0e0922c9553c9e2aeb64cf090644e2d1b/Version%203.0.jpeg)
 
 This is the final version! If we want to print it out from R, __we can always change its size when we save the figure to make sure title is center or aligned left__. 
 
